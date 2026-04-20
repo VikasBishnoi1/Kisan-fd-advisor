@@ -45,7 +45,7 @@ if ("SpeechRecognition" in window || "webkitSpeechRecognition" in window) {
     addMessage("🎤 आपने कहा: " + transcript, true);
 
     // Send to backend for FD explanation (local backend)
-    fetch("http://localhost:8080/api/fd/explain", {
+    fetch("https://kisan-fd-advisor-1.onrender.com/api/fd/explain", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ question: transcript }),
@@ -113,7 +113,7 @@ calcBtn.addEventListener("click", () => {
   }
 
   // Send to backend for FD calculation (local backend)
-  fetch("http://localhost:8080/api/fd/calculate", {
+  fetch("https://kisan-fd-advisor-1.onrender.com/api/fd/calculate", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ amount, rate, months }),
