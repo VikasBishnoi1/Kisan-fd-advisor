@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kisan FD Advisor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🗣️ Kisan FD Sahayak</h1>
+    <p>Ask FD questions in Punjabi/Hindi and get a voice reply.</p>
+
+    <div class="chat">
+      <div id="messages" class="messages"></div>
+    </div>
+
+    <div class="controls">
+      <button id="listenBtn">🎙️ Start Listening</button>
+      <button id="explainBtn">💬 Get FD Example</button>
+    </div>
+
+    <div class="fd-form">
+      <h3>Manual FD Query</h3>
+      <input type="number" id="amount" placeholder="Amount (₹)" />
+      <input type="number" id="rate" placeholder="Interest Rate % p.a." />
+      <input type="number" id="months" placeholder="Tenure (months)" />
+      <button id="calcBtn">Calculate FD</button>
+      <div id="result"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
